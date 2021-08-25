@@ -12,7 +12,7 @@ const removeBg = async function (url) {
 
   const res = await axios.post('https://api.remove.bg/v1.0/removebg', formData, {
 
-    headers: {...formData.getHeaders(), 'X-Api-Key': 'MzBBpHTJYuzsMhu1eRuZ1hpf'},
+    headers: {...formData.getHeaders(), 'X-Api-Key': config.REMOVE_BG_TOKEN},
     responseType: 'arraybuffer'
   })
 
